@@ -1,0 +1,26 @@
+package com.koreait.ex01.bean02;
+
+public class Engine {
+
+	// field
+	private String type; 		// 가솔린 OR 디젤
+	private int cc;		 		// 배기량
+	private int hp;		 		// 마력
+	private double efficiency;  // 연비
+	
+	// constructor
+	public Engine() {
+		
+	}
+
+	public Engine(String type, int cc, int hp, double efficiency) {
+		super();
+		this.type = type;
+		this.cc = cc;
+		this.hp = hp;
+		this.efficiency = efficiency;
+	}
+	
+	// getter setter
+	
+}

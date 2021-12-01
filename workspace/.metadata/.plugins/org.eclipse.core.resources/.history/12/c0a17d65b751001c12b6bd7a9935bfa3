@@ -1,0 +1,14 @@
+package com.koreait.ex01.quiz03;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class SpringMainClass {
+
+	AbstractApplicationContext ctx = new GenericXmlApplicationContext("quiz03.xml");
+	
+	OracleConnector connector = ctx.getBean("oracleConnector", OracleConnector.class);
+	
+	Connection con = connector.getConnection();
+	
+}

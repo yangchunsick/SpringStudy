@@ -1,0 +1,13 @@
+package com.koreait.ex01.java.quiz02;
+
+import java.util.Map;
+
+public class Soldier {
+	
+	private String name;
+	private Gun gun;
+	private Map<String, String> army;
+	
+	
+
+}

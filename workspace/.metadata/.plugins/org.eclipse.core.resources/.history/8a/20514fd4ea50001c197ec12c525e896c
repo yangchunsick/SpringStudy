@@ -1,0 +1,15 @@
+package com.koreait.ex01.bean01;
+
+public class JavaMainClass {
+
+	public static void main(String[] args) {
+		
+		// EngineerCalculator 객체 생성 및 메소드 호출
+		
+		// 1. Defualt 생성자 + Setter
+		
+		// 2. 필드를 이용한 생성자.
+
+	}
+
+}

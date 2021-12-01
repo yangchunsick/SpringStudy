@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 프로퍼티가 List인 경우에 어떻게 작업을 해야하는가 ? -->
+	<!-- List와 Set의 사용법은 비슷하다. -->
+	<!-- 1. List -->
+	<bean class="com.koreait.ex01.bean03.ListBean" id="listBean">
+		<property name="list">
+			<list>
+				<value>김밥</value>
+				<value>떡볶이</value>
+				<value>순대</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 2. Set -->
+	<!-- Set은 중복을 제거하는 능력이 있음 -->
+	<bean class="com.koreait.ex01.bean03.SetBean" id="setBean">
+		<property name="set">
+			<set>
+				<value>JAVA</value>
+				<value>JAVA</value>
+				<value>JSP</value>
+				<value>JSP</value>
+				<value>SPRING</value>
+				<value>SPRING</value>				
+			</set>
+		</property>
+	</bean>
+	
+	
+	<!-- 3. Map -->
+	<!-- Map은 List와 Set과 다르게 Key와 Value 합쳐진 Entry가 들어간다.  -->
+	<!-- entry 태그 안에 key와 value를 입력한다. -->
+	<bean class="com.koreait.ex01.bean03.MapBean" id="mapBean">
+		<property name="map">
+			<map>
+				<entry key="beginRecord" value="1"/>
+				<entry key="endRecord" value="10"/>
+			</map>
+		</property>
+	</bean>
+
+
+
+</beans>

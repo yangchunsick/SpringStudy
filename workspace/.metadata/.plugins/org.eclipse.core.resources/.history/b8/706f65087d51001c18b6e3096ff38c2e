@@ -1,0 +1,10 @@
+package com.koreait.ex01.bean02;
+
+public class Engine {
+
+	// field
+	private String type; // 가솔린 OR 디젤
+	private int cc;		 // 배기량
+	private int hp;		 // 마력
+	
+}

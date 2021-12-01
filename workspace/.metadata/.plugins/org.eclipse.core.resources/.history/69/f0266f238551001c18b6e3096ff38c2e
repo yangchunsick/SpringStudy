@@ -1,0 +1,19 @@
+package com.koreait.ex01.bean02;
+
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class SpringMainClass {
+
+	public static void main(String[] args) {
+		
+		// 첫 번째로 잡아줘야하는 것
+		AbstractApplicationContext ctx = new GenericXmlApplicationContext("app-context02.xml");
+		
+		Car car1 = ctx.getBean("car1", Car.class);
+		System.out.println("엔진 타입 :"+ car1.getEngin().getType);
+		System.out.println("배기량:" + car1.getEngin().getType);
+		System.out.println("마력");
+	}
+
+}

@@ -1,0 +1,47 @@
+package com.koreait.ex01.quiz01;
+
+import java.util.List;
+
+public class Exam {
+
+	private List<Integer> scores;
+	private double avg;
+	private char grade;
+	
+	public Exam(List<Integer> scores, double avg, char grade) {
+		super();
+		this.scores = scores;
+		this.avg = avg;
+		this.grade = grade;
+	}
+	
+
+	public List<Integer> getScores() {
+		return scores;
+	}
+
+
+	public void setScores(List<Integer> scores) {
+		this.scores = scores;
+	}
+
+
+	public double getAvg() {
+		return avg;
+	}
+
+
+	public void setAvg(double avg) {
+		this.avg = avg;
+	}
+
+
+	public char getGrade() {
+		return grade;
+	}
+
+
+	public void setGrade(char grade) {
+		this.grade = grade;
+	}
+}

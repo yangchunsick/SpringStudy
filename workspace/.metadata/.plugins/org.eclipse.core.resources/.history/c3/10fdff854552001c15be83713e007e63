@@ -1,0 +1,15 @@
+package com.koreait.ex01.java.bean02;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class Student {
+
+	private Map<String, String> info;
+	private List<Integer> scores;
+	private Set<String> awards;
+	
+	
+	
+}

@@ -1,0 +1,15 @@
+package com.koreait.ex01.bean03;
+
+import java.util.Set;
+
+public class SetBean {
+	
+	// field
+	private Set<String> set; // java.util
+
+	// constructor
+	// 디폴트 생성자
+	
+	
+	
+}

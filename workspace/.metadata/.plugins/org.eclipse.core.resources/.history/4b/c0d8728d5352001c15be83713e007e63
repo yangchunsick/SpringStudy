@@ -1,0 +1,13 @@
+Gun.java
+	private String model;
+	private int bullet;
+	
+Soldier.java
+	private String name;
+	private Gun gun;
+	private Map<String, String> army;
+
+	
+quiz04.xml에 bean 만들고,
+BeanConfig.java에 bean 만들고
+BeanConfig.java에서 quiz04.xml의 bean 가져오기

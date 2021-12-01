@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.koreait.ex01.bean02.Car" id="car1">
+		<property name="model" value="가솔린"/>
+		<property name="engine" value="현대"/>
+		<property name="car" ref="car1"/>
+	</bean>
+	<bean class="com.koreait.ex01.bean02.Engine" id="engine1">
+		<property name="engine" ref="engine1"/>
+		<property name="type" value="가솔린"/>
+		<property name="cc" value="3300"/>
+		<property name="hp" value="300"/>
+		<property name="efficiency" value="15.6"/>
+	</bean>
+
+
+</beans>

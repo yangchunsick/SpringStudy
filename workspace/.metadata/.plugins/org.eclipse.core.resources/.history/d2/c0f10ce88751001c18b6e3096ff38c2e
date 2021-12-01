@@ -1,0 +1,11 @@
+package com.koreait.ex01.bean03;
+
+public class SpringMainCalss {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}

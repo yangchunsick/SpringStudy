@@ -1,0 +1,16 @@
+package com.koreait.ex03.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.koreait.ex03.domain.Board;
+
+@Configuration
+public class BoardConfig {
+
+	@Bean
+	public Board board() {
+		Board board = new Board();
+	}
+	
+}

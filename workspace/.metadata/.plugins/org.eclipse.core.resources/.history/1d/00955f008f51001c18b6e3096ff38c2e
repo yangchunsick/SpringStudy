@@ -1,0 +1,14 @@
+package com.koreait.ex01.quiz01;
+
+import java.util.Map;
+
+public class Student {
+	
+	private String name;
+	private int age;
+	private Exam exam;
+	private Map<String, String> home; // address, tel
+
+	
+	
+}

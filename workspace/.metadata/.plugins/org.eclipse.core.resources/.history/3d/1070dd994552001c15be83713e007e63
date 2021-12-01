@@ -1,0 +1,11 @@
+package com.koreait.ex01.java.bean02;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+
+public class BeanConfig {
+
+	
+	
+}

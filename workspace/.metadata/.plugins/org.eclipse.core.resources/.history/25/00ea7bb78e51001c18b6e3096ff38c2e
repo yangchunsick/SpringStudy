@@ -1,0 +1,9 @@
+package com.koreait.ex01.quiz01;
+
+import java.util.List;
+
+public class Exam {
+
+	private List<Integer> scores;
+	
+}

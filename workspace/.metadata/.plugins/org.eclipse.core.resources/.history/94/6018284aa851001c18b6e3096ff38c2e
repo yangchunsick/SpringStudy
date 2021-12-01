@@ -1,0 +1,52 @@
+package com.koreait.ex01.quiz02;
+
+public class BMICalculator {
+	private double lowBase;			// 		 low     < 20
+	private double normalBase;		// 20 <= normal  < 25
+	private double overBase;		// 25 <= over    < 30
+	private double obesityBase; 	// 30 <= obesity < 35
+	private Calculator calculator;
+
+	// 생성자
+	public BMICalculator(double lowBase, double normalBase, double overBase, double obesityBase,
+			Calculator calculator) {
+		super();
+		this.lowBase = lowBase;
+		this.normalBase = normalBase;
+		this.overBase = overBase;
+		this.obesityBase = obesityBase;
+		this.calculator = calculator;
+	}
+	
+	// getter setter
+	public double getLowBase() {
+		return lowBase;
+	}
+	public void setLowBase(double lowBase) {
+		this.lowBase = lowBase;
+	}
+	public double getNormalBase() {
+		return normalBase;
+	}
+	public void setNormalBase(double normalBase) {
+		this.normalBase = normalBase;
+	}
+	public double getOverBase() {
+		return overBase;
+	}
+	public void setOverBase(double overBase) {
+		this.overBase = overBase;
+	}
+	public double getObesityBase() {
+		return obesityBase;
+	}
+	public void setObesityBase(double obesityBase) {
+		this.obesityBase = obesityBase;
+	}
+	public Calculator getCalculator() {
+		return calculator;
+	}
+	public void setCalculator(Calculator calculator) {
+		this.calculator = calculator;
+	}	
+}

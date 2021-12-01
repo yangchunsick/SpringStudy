@@ -1,0 +1,11 @@
+package com.koreait.ex01.bean01;
+
+public class SpringMainCalss {
+
+	public static void main(String[] args) {
+		
+		// spring bean configuration file이 만든 <bean>을 생성하는 스프링 클래스
+
+	}
+
+}

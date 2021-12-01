@@ -1,0 +1,9 @@
+package com.koreait.ex01.quiz02;
+
+public class BMICalculator {
+	private double lowBase;			// 		 low     < 20
+	private double normalBase;		// 20 <= normal  < 25
+	private double overBase;		// 25 <= over    < 30
+	private double obesityBase; 	// 30 <= obesity < 35
+	private Calculator calculator;
+}

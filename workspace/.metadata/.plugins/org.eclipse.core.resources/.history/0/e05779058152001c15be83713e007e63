@@ -1,0 +1,15 @@
+package com.koreait.ex03.contorller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class BoardController {
+
+	// String은 return 타압
+	@GetMapping
+	public String a() {
+		return "board/boardDetail";
+	}
+	
+}

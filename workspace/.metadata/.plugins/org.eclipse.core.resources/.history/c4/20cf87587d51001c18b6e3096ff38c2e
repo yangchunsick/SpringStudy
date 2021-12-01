@@ -1,0 +1,13 @@
+package com.koreait.ex01.bean02;
+
+public class Car {
+	
+	// field
+	private String model;
+	private Engine engine;
+	
+	// constructor
+	public car() {
+		
+	}
+}

@@ -1,0 +1,12 @@
+package com.koreait.ex01.java.quiz01;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class BeanConfig {
+
+	public Gugudan() {
+		
+	}
+	
+}

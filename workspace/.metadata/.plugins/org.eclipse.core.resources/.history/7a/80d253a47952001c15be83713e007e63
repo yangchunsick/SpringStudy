@@ -1,0 +1,22 @@
+package com.koreait.ex03.contorller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class MyController {
+	
+	// Spring Version 4 부터 @GetMapping, @PostMapping 지원
+	
+	
+	//@RequestMapping(value="/", method = RequestMethod.GET)
+	@GetMapping("/")
+	public String index() {
+		return "index";
+	}
+	
+	//@RequestMapping(value="memberView.do", method=RequestMethod.GET)
+	public String MemberView() {
+		return "member/memberDtail";
+	}
+}

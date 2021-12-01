@@ -1,0 +1,9 @@
+Spring MVC !
+
+pom.xml 에서 설정을 바꿀 수 있다.
+수정 후에는 프로젝트를 우측 클릭하여 Meavn 업데이트를 해야한다.
+
+config는 Dao 같은 느낌
+controller는 service
+domain은 dto 같은 느낌
+

@@ -1,0 +1,10 @@
+package com.koreait.ex01.bean03;
+
+import java.util.Set;
+
+public class SetBean {
+	
+	// field
+	private Set<String> set; // java.util
+
+}

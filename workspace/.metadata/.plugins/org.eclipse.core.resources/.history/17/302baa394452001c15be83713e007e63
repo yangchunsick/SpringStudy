@@ -1,0 +1,13 @@
+package com.koreait.ex01.java.bean01;
+
+public class SpringMainClass {
+
+	public static void main(String[] args) {
+		
+		// AnnotationConfigApplicationContext 클래스
+		// @Configuration과 @Bean을 이용한 Bean 생성
+		// 
+
+	}
+
+}

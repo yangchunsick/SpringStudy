@@ -1,0 +1,47 @@
+package com.koreait.ex02.domain;
+
+public class Board {
+	
+	private String board;
+	private String title;
+	private Member member;
+	
+	public Board() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Board(String board, String title, Member member) {
+		super();
+		this.board = board;
+		this.title = title;
+		this.member = member;
+	}
+
+	public String getBoard() {
+		return board;
+	}
+
+	public void setBoard(String board) {
+		this.board = board;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public Member getMember() {
+		return member;
+	}
+
+	public void setMember(Member member) {
+		this.member = member;
+	}
+	
+	
+	
+
+}

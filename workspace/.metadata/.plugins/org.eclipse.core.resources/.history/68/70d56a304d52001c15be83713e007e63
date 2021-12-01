@@ -1,0 +1,8 @@
+package com.koreait.ex01.java.bean03;
+
+public class Publisher {
+
+	private String name;
+	private String tel;
+		
+}

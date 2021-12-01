@@ -1,0 +1,16 @@
+Calculator.java
+	public double add(double a, double b) {return a + b;}
+	public double sub(double a, double b) {return a - b;}
+	public double mul(double a, double b) {return a * b;}
+	public double div(double a, double b) {return a / b;}
+	
+Gugudan.java
+	private int begin;
+	private int end;
+	private Calculator calculator;
+	
+실행 ) begin = 2, end = 3인 상황
+2x1 = 2
+...
+3x9 = 27
+

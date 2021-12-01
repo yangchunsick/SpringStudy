@@ -1,0 +1,35 @@
+package com.koreait.ex03.contorller;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.koreait.ex03.config.MemberConfig;
+
+@Controller
+public class MyController {
+	
+	AbstractApplicationContext ctx = new AnnotationConfigApplicationContext(MemberConfig.class);
+	
+	// Spring Version 4 부터 @GetMapping, @PostMapping 지원
+	
+	
+	//@RequestMapping(value="/", method = RequestMethod.GET)
+	@GetMapping("/")
+	public String index() {
+		// 
+		
+		return "index";
+	}
+	
+	//@RequestMapping(value="memberView.do", method=RequestMethod.GET)
+	@GetMapping("memberView.do")
+	public String MemberView() {
+		
+		// member2을 만들어서 memberDtail.jsp로 보내기 !
+		//
+		
+		return "member/memberDtail";
+	}
+}

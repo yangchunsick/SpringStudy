@@ -1,0 +1,33 @@
+package com.koreait.ex03.contorller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.koreait.ex03.domain.Board;
+
+@Controller
+public class BoardController {
+
+	// ctx 없이 Bean 생성하기
+
+	// 1. @Inject, @Resource, @Autowired와 같은 에너테이션 중 하나를 사용
+	// 2. @Autowired를 가장 많이 사용
+	
+	// @Autowired
+	// 1. 객체 타입 (class)이 일치하면 객체를 찾아서 알아서 생성한다.
+	// 2. 필드, 생성자, setter를 대상으로 함
+	// 3. 필드는 필드 자체에 생성, 생성자나 setter는 매개변수에 생성한다.
+	
+	// 여기는 필드다 오바
+	@Autowired
+	private Board myBoard; // 반환 타입이 Board인 Bean을 찾아서 가져온다.
+	
+	
+	
+	@GetMapping("boardView.do")
+	public String a() { // String은 return 타입
+		return "board/boardDetail";
+	}
+	
+}

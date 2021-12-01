@@ -1,0 +1,12 @@
+OracleConnector.java
+	private String driverClassName;
+	private String url
+	private String username;
+	private String password;
+	
+실행)
+name   : 홍길동
+height : 177.5cm
+weight : 70.5kg
+bmi : 22.3 (정상)
+course : {"헬스", "필라테스"}

@@ -1,0 +1,5 @@
+package com.koreait.ex03.domain;
+
+public class Board {
+
+}

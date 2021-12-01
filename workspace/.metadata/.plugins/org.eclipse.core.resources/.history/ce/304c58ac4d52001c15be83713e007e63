@@ -1,0 +1,19 @@
+package com.koreait.ex01.java.bean03;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class BeanConfig{
+	
+	@Bean
+	public Publisher publisher() {
+		return new Publisher("서울출판사", "02-000-0000");
+	}
+	
+	@Bean
+	public Book book() {
+		
+	}
+
+}

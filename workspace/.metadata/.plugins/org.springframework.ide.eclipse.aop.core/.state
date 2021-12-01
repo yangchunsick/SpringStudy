@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="03_MVC_BEAN"/>
+<aop-project name="01_BEAN"/>
+<aop-project name="02_MVC_STATIC"/>
+</aop-reference-model>

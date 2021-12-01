@@ -1,0 +1,33 @@
+package com.koreait.ex01.java.quiz02;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class BeanConfig {
+	@Bean
+	public Gun gun() {
+		Gun gun = new Gun();
+		gun.setModel("k2");
+		gun.setBullet(15);
+		return gun;
+	}
+	@Bean
+	public Soldier soldier() {
+		Soldier soldier = new Soldier();
+		Map<String, String> army = new HashMap<String, String>();
+		army.put("name", "백골");
+		army.put("address", "강원도 철원군");
+		soldier.setName("김상사");
+		soldier.setGun(gun());
+		soldier.setArmy(army);
+		
+		return soldier;
+		
+		
+	}
+
+}

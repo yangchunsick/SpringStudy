@@ -1,0 +1,10 @@
+package com.koreait.ex01.quiz01;
+
+public class SpringMainCalss {
+
+	public static void main(String[] args) {
+
+	
+	}
+
+}

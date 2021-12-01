@@ -1,0 +1,8 @@
+package com.koreait.ex02.domain;
+
+public class Member {
+	
+	private String id;
+	private String pw;
+
+}

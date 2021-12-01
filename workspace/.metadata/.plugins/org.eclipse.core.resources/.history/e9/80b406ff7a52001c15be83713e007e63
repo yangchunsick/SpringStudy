@@ -1,0 +1,14 @@
+package com.koreait.ex03.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.koreait.ex02.domain.Member;
+
+@Configuration
+public class MemberConfig {
+
+	@Bean
+	public Member
+	
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- 1. setter injection -->
+	<bean class="com.koreait.ex01.bean02.Engine" id="engine1">
+		<property name="type" value="가솔린"/>
+		<property name="cc" value="1000"/>
+		<property name="hp" value="150"/>
+		<property name="efficiency" value="12.5"/>
+	</bean>
+	<bean class="com.koreait.ex01.bean02.Car" id="car1">
+		<property name="model" value="모닝"/>
+		<property name="engine" ref="engine1"/>
+	</bean>
+	
+	<!-- 1. constructor injection -->
+	
+
+</beans>

@@ -1,0 +1,11 @@
+package com.koreait.ex01.java.bean02;
+
+public class SpringMainClass {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

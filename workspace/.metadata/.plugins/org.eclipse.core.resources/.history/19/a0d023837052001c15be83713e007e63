@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.picture1{
+		width: 640px;
+		height: 480px;
+		background-image: url(resources/images/apple.jpg);
+		background-size: 640px 480px;
+	}
+	
+	.picture2{
+		width: 640px;
+		height: 480px;
+		background-image: url(assets/images/dog.jpg);
+		background-size: 640px 480px;
+	}
+
+</style>
+</head>
+<body>
+	
+	<h1>Gallery에 오신 걸 환영 합니다.</h1>
+	<div class="picture1"></div>
+	
+	<h1>사진 !</h1>
+	<div class="picture2"></div>
+</body>
+</html>

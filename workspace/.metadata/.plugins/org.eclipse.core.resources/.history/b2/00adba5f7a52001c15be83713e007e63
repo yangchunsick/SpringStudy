@@ -1,0 +1,5 @@
+package com.koreait.ex02.domain;
+
+public class Member {
+
+}

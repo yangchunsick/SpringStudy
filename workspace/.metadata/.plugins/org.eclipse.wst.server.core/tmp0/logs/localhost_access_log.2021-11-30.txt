@@ -1,0 +1,3 @@
+127.0.0.1 - - [30/Nov/2021:09:39:17 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:09:39:17 +0900] "GET /ex01/WEB-INF/classes/com/koreait/ex01/bean01/SpringMainClass.java HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [30/Nov/2021:09:39:17 +0900] "GET /favicon.ico HTTP/1.1" 404 818

@@ -1,0 +1,8 @@
+/**
+ *
+ */
+ onload = function(){
+
+    alert('hello');
+
+ }

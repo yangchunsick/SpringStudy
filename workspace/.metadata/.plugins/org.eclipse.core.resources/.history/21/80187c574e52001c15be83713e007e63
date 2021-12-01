@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.koreait.ex01.java.bean03.Publisher" id="publisher2">
+		<property name="name" value="부산 출판사"/>
+		<property name="tel" value="051-000-0000"/>
+	</bean>
+	
+	<bean class="com.koreait.ex01.java.bean03.Book" id="book2">
+		<property name="title" value="자바의 정석"></property>
+	</bean>
+	
+</beans>

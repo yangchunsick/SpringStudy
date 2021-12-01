@@ -1,0 +1,25 @@
+package com.koreait.ex01.java.bean01;
+
+import org.springframework.context.annotation.Configuration;
+
+/* 
+	@Configuration
+	안녕 난 Bean을 만드는 Java 클래스야 !
+	날 이용하려면 cglib 디펜던시를 추가 해야 돼
+*/
+@Configuration
+public class BeanConfig {
+	
+	// 메소드 1개 = Bean 1개
+	
+	// 반환타입 : Song <bean class="Song">
+	// 메소드 이름 : mySong <bean id="mySong">
+	public Song mySong() {
+		// setter injection을 하던
+		// constructor injection을 하던
+		// 자유..!!
+		
+		Song result = new Song();
+	}
+
+}

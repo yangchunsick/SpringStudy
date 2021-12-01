@@ -1,0 +1,15 @@
+package com.koreait.ex01.quiz03;
+
+public class OracleConnector {
+	
+	private String driverClassName;
+	private String url;
+	private String username;
+	private String password;
+	
+	
+	
+	
+	public void Connection getConnection(){ }
+
+}

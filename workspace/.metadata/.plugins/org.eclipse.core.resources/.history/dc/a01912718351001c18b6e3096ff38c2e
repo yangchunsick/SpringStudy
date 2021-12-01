@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- 1. setter injection -->
+	<bean class="com.koreait.ex01.bean02.Engine" id="engine1">
+		<property name="type" value="가솔린"/>
+		<property name="cc" value="1000"/>
+		<property name="hp" value="150"/>
+		<property name="efficiency" value="12.5"/>
+	</bean>
+	<bean class="com.koreait.ex01.bean02.Car" id="car1">
+		<property name="model" value="모닝"/>
+		<property name="engine" ref="engine1"/>
+	</bean>
+	
+	<!-- 생성자가 있어야 만들 수 있음 -->
+	<!-- 1. constructor injection -->
+	<bean class="com.koreait.ex01.bean02.Engine" id="engine2">
+		<constructor-arg value="디젤"/>
+		<constructor-arg value="2000"/>
+		<constructor-arg value="250"/>
+		<constructor-arg value="15.5"/>
+	</bean>
+	<bean class="com.koreait.ex01.bean02.Car" id="car2">
+		<constructor-arg value="520d"/>
+		<constructor-arg ref="engine2"/>
+	</bean>
+	
+	<!-- 3. 추가 기능 활용하기 -->
+	<!-- 
+		Namesapces 탭에서 "p" 옵션을 체크하면 property 지정을 bean  태그의 옵션으로 처리 할 수 있다.
+	 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>

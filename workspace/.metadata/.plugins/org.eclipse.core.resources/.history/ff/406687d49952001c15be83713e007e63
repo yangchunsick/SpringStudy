@@ -1,0 +1,11 @@
+package com.koreait.ex02.domain;
+
+public class Board {
+	
+	private String board;
+	private String title;
+	private Member member;
+	
+	
+
+}

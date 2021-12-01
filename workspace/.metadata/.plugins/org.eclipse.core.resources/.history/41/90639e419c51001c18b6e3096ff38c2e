@@ -1,0 +1,52 @@
+package com.koreait.ex01.quiz01;
+
+import java.util.List;
+
+public class Exam {
+
+	private List<Integer> scores;
+	private double avg;
+	private char grade;
+
+	// 생성자 생략
+	
+	public List<Integer> getScores() {
+		return scores;
+	}
+
+
+	public void setScores(List<Integer> scores) {
+		this.scores = scores;
+	}
+
+
+	// 평균 또는 학점 같이 계산이 필요한 경우는 함수를 이용해서 
+	
+	public double getAvg() {
+		return avg;
+	}
+
+
+	public void setAvg(double avg) {
+		this.avg = avg;
+	}
+
+	/* 평균 계산 */
+	// scores의 점수를 get해서 계산하라..!
+	public void setAvg() {
+		int total = 0;
+		int length = scores.size();
+		for(int i = 0; i < length; i++) {
+			total += scores.get(i);			
+		}
+		this.avg = total / 
+	}
+	public char getGrade() {
+		return grade;
+	}
+
+
+	public void setGrade(char grade) {
+		this.grade = grade;
+	}
+}

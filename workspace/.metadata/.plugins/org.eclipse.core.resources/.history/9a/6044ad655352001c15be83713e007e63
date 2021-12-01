@@ -1,0 +1,8 @@
+Gun.java
+	private String model;
+	private int bullet;
+	
+Soldier.java
+	private String name;
+	private Gun gun;
+	private Map<String, String> army;

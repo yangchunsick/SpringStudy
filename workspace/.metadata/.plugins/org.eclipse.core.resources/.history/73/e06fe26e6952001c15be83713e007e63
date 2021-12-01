@@ -1,0 +1,13 @@
+package com.koreait.ex02.controller;
+
+import org.springframework.stereotype.Controller;
+
+/*
+  	@Controller
+  	안녕 난 Controller야 서블릿이 아니라 자바 클래스야
+ */
+
+@Controller
+public class MyController {
+
+}

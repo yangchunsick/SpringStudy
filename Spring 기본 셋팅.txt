@@ -1,0 +1,38 @@
+Spring : 개발자에게 봄을 선사한다.
+
+1. Spring legacy project (고전 프로젝트) : sts 3.x ver
+   - Spring MVC Project
+   - Mybatis
+
+2. Spring boot : sts 4.x ver
+   - Mybatis or JPA
+   - jsp or html + template(thymeleaf)
+   - war or jar
+
+공식 홈페이지 spring.io
+
+진행 sts 4.x 다운로드 + sts 3.x 기능 추가
+
+help -> eclipse market -> sts 검색 -> Spring Tools 3.9.19 다운로드
+
+sts 4.12 + add on 3.9.19
+  Spring MVC Project
+  Spring boot
+----------------------------
+sts 3.9
+  Spring MVC Project
+sts 4.12
+  Spring boot
+
+Window - prespective - Open Perspective - other - Spring
+
+View 정리 (Servers 옮기고 나머지 닫기)
+
+Server 추가 (Tomcat 8.5)
+
+Window - Preferences 
+- theme(dark or light)
+- font
+- encoding
+  - General - Workspace - Text file encoding - UTF-8
+  - Web - CSS File / HTML File / JSP Files - UTF-8

@@ -1,0 +1,13 @@
+package com.koreait.ex01.bean01;
+
+public class EngineerCalculator {
+
+	// filed
+	private int a;
+	private int b;
+	private Calculator;
+	
+	// constructor
+	
+	
+}

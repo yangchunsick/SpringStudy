@@ -1,0 +1,19 @@
+package com.koreait.ex01.java.quiz02;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+
+public class SpringMainClass {
+
+	public static void main(String[] args) {
+
+		AbstractApplicationContext ctx = new AnnotationConfigApplicationContext(BeanConfig.class);
+
+		Soldier s1 = ctx.getBean("soldier", Soldier.class);
+		System.out.println(s1.getName());
+		System.out.println(s1.getGun().getModel());
+		System.out.println(s1.getGun().getBullet());
+		
+	}
+
+}

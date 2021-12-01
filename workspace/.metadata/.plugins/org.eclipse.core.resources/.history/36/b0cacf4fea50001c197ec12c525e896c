@@ -1,0 +1,31 @@
+package com.koreait.ex01.bean01;
+
+public class EngineerCalculator {
+
+	// filed
+	private int a;
+	private int b;
+	private Calculator calculator;
+	
+	// constructor (생성자)
+	public EngineerCalculator() {
+		
+	}
+	public EngineerCalculator(int a, int b, Calculator calculator) {
+		super();
+		this.a = a;
+		this.b = b;
+		this.calculator = calculator;
+	}
+	
+	// method
+	public void add() {
+		calculator.add(a, b);
+	}
+	public void sub() {
+		calculator.sub(a, b);
+	}
+	
+	
+	
+}

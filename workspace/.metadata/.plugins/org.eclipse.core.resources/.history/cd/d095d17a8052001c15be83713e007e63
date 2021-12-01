@@ -1,0 +1,13 @@
+package com.koreait.ex03.domain;
+
+public class Board {
+	
+	private String title;
+	private String content;
+	
+	public Board() {
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

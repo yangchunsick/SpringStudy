@@ -1,0 +1,8 @@
+package com.koreait.ex01.java.quiz02;
+
+public class Gun {
+	
+	private String model;
+	private int bullet;
+
+}

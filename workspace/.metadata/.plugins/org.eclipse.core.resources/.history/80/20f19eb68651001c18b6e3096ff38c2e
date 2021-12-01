@@ -1,0 +1,13 @@
+package com.koreait.ex01.bean03;
+
+import java.util.List;
+
+public class ListBean {
+
+	// field
+	private List<String> list; // java.util
+	
+	// construct
+	// 디폴트 생성자 사용
+	
+}

@@ -1,0 +1,9 @@
+package com.koreait.ex01.java.quiz01;
+
+public class Gugudan {
+
+	private int begin;
+	private int end;
+	private Calculator calculator;
+	
+}

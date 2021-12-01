@@ -1,0 +1,20 @@
+package com.koreait.ex03.contorller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class BoardController {
+
+	// ctx 없이 Bean 생성하기
+
+	// 1. @Inject, @Resource, @Autowired와 같은 에너테이션 중 하나를 사용
+	
+	
+	
+	@GetMapping("boardView.do")
+	public String a() { // String은 return 타입
+		return "board/boardDetail";
+	}
+	
+}

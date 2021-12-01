@@ -1,0 +1,24 @@
+package com.koreait.ex01.java.quiz01;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class BeanConfig {
+
+	@Bean
+	public Gugudan gugudan() {
+		Gugudan gugudan = new Gugudan();
+		gugudan.setBegin(1);
+		gugudan.setEnd(9);
+		return gugudan;
+		
+	}
+	
+	@Bean
+	public Calculator calculator() {
+		Calculator calculator = new Calculator();
+		
+	}
+	
+}
