@@ -2,5 +2,7 @@
 <aop-reference-model>
 <aop-project name="03_MVC_BEAN"/>
 <aop-project name="01_BEAN"/>
+<aop-project name="04_MVC_REQUEST"/>
+<aop-project name="05_MVC_AJAX"/>
 <aop-project name="02_MVC_STATIC"/>
 </aop-reference-model>

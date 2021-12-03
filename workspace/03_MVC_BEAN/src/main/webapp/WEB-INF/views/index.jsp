@@ -12,8 +12,11 @@
 	<h1>회원 아이디 : ${member1.pw}</h1> <!-- 실제로 동작하는 건 config에 있는 get pw -->
 	<h1>안녕 세상아 !</h1>
 	
-	<a href="memberView.do">회원 정보 보기</a>
+	<a href="memberView1.do">회원1 정보 보기</a>
 	<br>
+	<a href="memberView2.do">회원2 정보 보기</a>
+	<br>
+	<a href="memberView3.do">회원3 정보 보기</a>
 	<a href="boardView.do">게시글 보기</a>
 </body>
 </html>

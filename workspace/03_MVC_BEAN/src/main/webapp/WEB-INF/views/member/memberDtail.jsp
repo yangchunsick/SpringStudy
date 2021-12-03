@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>회원2 정보 !</h1>
-	<h3>${member2.id}</h3>
-	<h3>${member2.pw}</h3>
+	<h3>회원 아이디 : ${member.id}</h3>
+	<h3>회원 비밀번호 :${member.pw}</h3>
 </body>
 </html>
