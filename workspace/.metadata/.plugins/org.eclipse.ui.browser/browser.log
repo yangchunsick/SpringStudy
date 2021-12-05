@@ -22,3 +22,10 @@
 12월 02, 2021 16:34:07.12 [1960:11152:1202/163407.011:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
 12월 02, 2021 16:34:07.15 [1960:2896:1202/163407.015:ERROR:device_event_log_impl.cc(214)] [16:34:07.014] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
 12월 02, 2021 17:25:39.305 [1960:2896:1202/172539.305:ERROR:interface_endpoint_client.cc(658)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+12월 05, 2021 21:59:09.892 NEW SESSION
+12월 05, 2021 21:59:09.892 [12556:9296:1205/215909.890:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+12월 05, 2021 21:59:09.892 [12556:9296:1205/215909.890:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+12월 05, 2021 21:59:09.893 [12556:9296:1205/215909.890:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+12월 05, 2021 21:59:09.893 [12556:9296:1205/215909.892:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+12월 05, 2021 22:53:01.924 [12556:8124:1205/225301.924:ERROR:device_event_log_impl.cc(214)] [22:53:01.922] USB: usb_service_win.cc:261 Failed to get device driver name: 요소가 없습니다. (0x490)

@@ -44,7 +44,7 @@ public class Board {
 			this.title = title;
 			this.content = content;
 		}
-		
+
 		// setter : BoardBuilder를 반환함, 선택 field만 작업
 		public BoardBuilder setHit(Long hit) {
 			this.hit = hit;
@@ -55,7 +55,7 @@ public class Board {
 		public Board build() {
 			return new Board(this); 
 		}
-		
-	} // end BoardBuilder
 
+	} // end BoardBuilder
+	
 } // end Board

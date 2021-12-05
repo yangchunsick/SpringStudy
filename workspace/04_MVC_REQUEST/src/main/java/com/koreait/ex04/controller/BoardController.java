@@ -27,14 +27,21 @@ public class BoardController {
 		4. 
 	*/
 	@GetMapping("v2.do")
+	// 하나의 클래스 그 클래스의 타입을 이 메서드의 반환 타입이 된다 
 	public ModelAndView v2() {
-		
-		ModelAndView mav = new ModelAndView();		
+		// 사용하기위해 mav 객체를 만듬
+		ModelAndView mav = new ModelAndView();
 		
 		// View 설정 보내는 경로
 		mav.setViewName("board/boardDetail");
 		
-		// Model 설정 (넘겨줄 값)	//BoardBuilder는 생성자 그러므로 new가 핋요
+		// variable
+		// 변수 
+		
+		// Model 설정 (넘겨줄 값)	//BoardBuilder는 생성자 그러므로 new가 필요
+		// array 배열
+		// object는 객체
+		
 		mav.addObject("board", new Board.BoardBuilder(1L, "긴급공지", "내일 청소")
 				.setHit(0L)
 				.build());

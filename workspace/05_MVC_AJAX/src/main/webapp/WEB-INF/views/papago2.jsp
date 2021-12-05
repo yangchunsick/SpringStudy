@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <style>
 	.wrap {
 		display: flex;
@@ -41,9 +41,9 @@
 				type: 'post',
 				// type은 숨겨서 post로
 				data: JSON.stringify({
-					"source" : $('#source').val(),
-					"target" : $('#target').val,
-					"text" : $('#text').val()
+					"source": $('#source').val(),
+					"target": $('#target').val(),
+					"text": $('#text').val()
 					// 보내는 데이터는 JSON의 String 형식으로
 					// source, target, text의 param들을 넘겨 줄 것이다.
 				}),
@@ -51,11 +51,11 @@
 				// contentType은 JSON 방식으로 변환해주고
 				dataType: 'json',
 				// 받아오는 dataType은 json형식으로 받아온다.
-				success: function() {
-					
+				success: function(result) {
+					$('#translated').val(result.message.result.translatedText);
 				},
-				error: function() {
-					
+				error: function(xhr) {
+					alert(xhr.responseText);
 				}
 			});//ajax
 		});//함수
@@ -79,7 +79,7 @@
 					<option value="ko">한국어</option>
 					<option value="en">영어</option>
 				</select><br>
-				<textarea rows="20" cols="60" id="text" placeholder="번역할  내용 입력"></textarea>
+				<textarea rows="20" cols="60" id="text" placeholder="번역할  내용 입력"></textarea><br>
 				<input type="button" value="번역하기" id="btn">
 			</form>
 		</div>
@@ -90,8 +90,8 @@
 					<option value=""></option>
 					<option value="ko">한국어</option>
 					<option value="en">영어</option>
-				</select>
-				<textarea rows="20" cols="60" id="translated" placeholder="번역 받은 내용" readonly></textarea>
+				</select><br>
+				<textarea rows="20" cols="60" id="translated"></textarea><br>
 			</form>
 		</div>
 		
