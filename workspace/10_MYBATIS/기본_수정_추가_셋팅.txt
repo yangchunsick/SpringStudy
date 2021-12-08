@@ -1,0 +1,10 @@
+1 )
+pom.xml 버전 수정및 추가
+
+2)
+web.xml encoding 추가
+
+3)
+src/main/resources
+mapper folder 추가
+mybatis mapper.xml
