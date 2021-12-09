@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=08_SPRING_JDBC/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.koreait.ex08.service{ContactService.java[ContactService" modifiers="513" timestamp="1638864357788"/>
+<typeInfo handle="=10_MYBATIS/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.koreait.ex10.service{NoticeService.java[NoticeService" modifiers="513" timestamp="1638949170712"/>
+<typeInfo handle="=12_GALLERY/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.koreait.ex12.repository{GalleryRepository.java[GalleryRepository" modifiers="513" timestamp="1639018467146"/>
+<typeInfo handle="=12_GALLERY/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.koreait.ex12.service{GalleryService.java[GalleryService" modifiers="513" timestamp="1639035404399"/>
 </typeInfoHistroy>

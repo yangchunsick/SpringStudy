@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!--
+	namespace는 ! Repository 패키지의 NoticeRepository 인터페이스를 참조함.
+	Mapper의 각 태그 id가 NoticeRepository 인터페이스의 추상 메소드 이름과 매핑됌.
+-->
+<mapper namespace="com.koreait.ex11.repository.NoticeRepository">
+
+	<!-- 목록 -->
+	<select id="selectNoticeList" resultType="com.koreait.ex11.domain.Notice">
+		SELECT NO, TITLE, CONTENT, CREATED, LASTMODIFIED
+		  FROM NOTICE
+		 ORDER BY NO DESC
+	</select>
+	
+	<!-- 상세보기 -->
+	<select id="selectNoticeByNo" parameterType="Long" resultType="com.koreait.ex11.domain.Notice">
+		SELECT NO, TITLE, CONTENT, CREATED, LASTMODIFIED
+		  FROM NOTICE
+		 WHERE NO = #{no}
+	</select>
+	
+	<!-- 추가 -->
+	<insert id="insertNotice" parameterType="com.koreait.ex11.domain.Notice">
+		INSERT INTO NOTICE
+		VALUES (NOTICE_SEQ.NEXTVAL, #{title}, #{content}, SYSDATE, SYSDATE)
+	</insert>
+	
+	<!-- 수정 -->	
+	<update id="updateNotice" parameterType="com.koreait.ex11.domain.Notice">
+		UPDATE NOTICE
+		   SET TITLE = #{title}, CONTENT = #{content}, LASTMODIFIED = SYSDATE
+		 WHERE NO = #{no}
+	</update>
+	
+	<!-- 삭제 -->	
+	<delete id="deleteNotice" parameterType="Long">
+		DELETE
+		  FROM NOTICE
+		 WHERE NO = #{no} 
+	</delete>
+
+</mapper>
