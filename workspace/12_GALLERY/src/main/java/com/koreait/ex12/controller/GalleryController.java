@@ -1,5 +1,6 @@
 package com.koreait.ex12.controller;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
@@ -54,6 +55,23 @@ public class GalleryController {
 		return "gallery/detail";
 	}
 	
+	// 첨부파일 다운로드
+	@PostMapping(value = "download")
+	public void download (HttpServletRequest request, HttpServletResponse response) { // 다운로드를 받을 때 response는 필수이다.
+		service.download(request, response);		
+	}
 	
+	// 수정
+	@PostMapping(value = "updateGallery")
+	public void updateGallery(MultipartHttpServletRequest multipartRequest, HttpServletResponse response) {
+		service.updateGallery(multipartRequest, response);
+	}
+	
+	
+	// 삭제
+	@PostMapping(value = "deleteGallery")
+	public void deleteGallery(MultipartHttpServletRequest multipartRequest, HttpServletResponse response) {
+		service.deleteGalery(multipartRequest, response);
+	}
 	
 }

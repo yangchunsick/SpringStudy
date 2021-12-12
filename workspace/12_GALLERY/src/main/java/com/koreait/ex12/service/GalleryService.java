@@ -3,6 +3,7 @@ package com.koreait.ex12.service;
 import java.io.PrintWriter;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.web.multipart.MultipartHttpServletRequest;
@@ -17,10 +18,13 @@ public interface GalleryService {
 		// 추가
 		public void insertGallery(MultipartHttpServletRequest multipartRequest, HttpServletResponse response);
 		// 수정
-		public int updateGallery(Gallery gallery);
+		public void updateGallery(MultipartHttpServletRequest multipartRequest, HttpServletResponse response);
 		// 삭제 
-		public int deleteGalery(Long no);
-		// 성공/실패 메시지
+		public void deleteGalery(MultipartHttpServletRequest multipartRequest, HttpServletResponse response);
+		// 첨부파일 다운로드
+		public void download(HttpServletRequest request, HttpServletResponse response);
+		
+		// 성공/실패 메시지 // 디폴트 메시지
 		public default void message(int result, HttpServletResponse response,
 				String success, String fail, String path) {
 			try {
@@ -43,7 +47,5 @@ public interface GalleryService {
 				e.printStackTrace();
 			}
 		} // public default void message();
-
-		
 		
 }

@@ -40,7 +40,18 @@
 						<td><a href="/ex12/gallery/selectGalleryByNo?no=${gallery.no}">${gallery.title}</a></td>
 						<td>${gallery.writer}</td>
 						<td>${gallery.created}</td>
-						<td><a href="#"><i class="fas fa-paperclip"></i></a></td>
+						<td>
+							<c:if test="${not empty gallery.origin}">
+								<form action="/ex12/gallery/download" method="post">
+									<input type="text" name="origin" value="${gallery.origin}"> <!-- 사용자가 파일을 첨부 했을 때의 원래 이름 -->
+									<input type="hidden" name="path" value="${gallery.path}"> <!-- 파일이 있는 경로/위치 -->
+									<input type="hidden" name="saved" value="${gallery.saved}"> <!-- 서버에 저장되어 있는 파일의 이름 -->
+									<button>
+										<i class="fas fa-paperclip"></i>
+									</button>															
+								</form>
+							</c:if>
+						</td>
 					</tr>
 				</c:forEach>
 			</c:if>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<!--
+	namespace는 ! Repository 패키지의 MemberRepository 인터페이스를 참조함.
+	Mapper의 각 태그 id가 MemberRepository 인터페이스의 추상 메소드 이름과 매핑됌.
+-->
+<mapper namespace="com.koreait.ex13.repository.MemberRepository">
+
+	<!-- 아이디 중복 체크 -->
+	<select id="selectMemberById" parameterType="String" resultType="com.koreait.ex13.domain.Member">
+		SELECT NO, ID, PW, NAME, EMAIL, REGISTED
+		  FROM MEMBER
+		 WHERE ID = #{id}
+	</select>
+	
+	<!-- 회원가입 -->
+	<insert id="joinMember" parameterType="com.koreait.ex13.domain.Member">
+		INSERT INTO MEMBER
+		VALUES (MEMBER_SEQ.NEXTVAL, #{id}, #{pw}, #{name}, #{email}, 1, SYSDATE)
+	</insert>
+	
+	<!--  -->
+	<select id="login" parameterType="com.koreait.ex13.domain.Member" resultType="com.koreait.ex13.domain.Member">
+		SELECT NO, ID, PW, NAME, EMAIL, STATE, REGISTED
+		  FROM MEMBER
+		 WHERE ID = #{id} AND PW = #{pw} AND STATE = 1
+	</select>
+	
+	<!-- 아이디 찾기 -->
+	<select id="selectMemberByEmail" parameterType="String" resultMap="com.koreait.ex13.domain.Member">
+		SELECT NO, ID, PW, NAME, EMAIL, STATE, REGISTED
+		  FROM MEMBER
+		 WHERE EMAIL = #{email}
+	</select>
+
+	<!-- 비밀번호 찾기 -->
+	<update id="updatePw" parameterType="com.koreait.ex13.domain.Member" >
+		UPDATE MEMBER
+		   SET PW = #{PW}
+		 WHERE NO = #{no}
+	</update>
+	
+	<!-- 내 정보 바꾸기 -->
+	<update id="updateMember" parameterType="com.koreait.ex13.domain.Member">
+		UPDATE MEMBER
+		   SET NAME = #{name}
+		     , EMAIL = #{email}
+		 WHERE NO = #{no}
+	</update>
+	
+	<!-- 회원 탈퇴 -->
+	<update id="leaveMember" parameterType="Long">
+		UPDATE MEMBER
+		   SET STATE = -1
+		 WHERE NO = #{no}
+	</update>
+	
+	
+	
+	
+</mapper>
